@@ -1,0 +1,31 @@
+level 1 ... Success!
+level 2 ... Success!
+level 3 ... Success!
+level 4 ... Success!
+--------------------------------------------------------------------------------
+I1 cache:         65536 B, 64 B, 2-way associative
+D1 cache:         32768 B, 64 B, 4-way associative
+LL cache:         262144 B, 64 B, 8-way associative
+Command:          ./refcode
+Data file:        cache.trace
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Thresholds:       0.1 100 100 100 100 100 100 100 100
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+         Ir I1mr ILmr          Dr      D1mr      DLmr         Dw  D1mw  DLmw 
+--------------------------------------------------------------------------------
+890,014,558  766  764 540,808,080 2,873,657 2,345,641 77,731,525 1,306 1,283  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+         Ir I1mr ILmr          Dr      D1mr      DLmr         Dw D1mw DLmw  file:function
+--------------------------------------------------------------------------------
+848,625,104    2    2 524,188,383   528,543       626 74,660,026    1    0  /home/cso/Documents/Computer System Organization/Spring2015-CSO-Project2-Cache-Optimization/refcode.c:level_4
+ 17,832,989    3    3   7,343,110 1,048,569 1,048,569  1,049,606    1    1  /home/cso/Documents/Computer System Organization/Spring2015-CSO-Project2-Cache-Optimization/refcode.c:level_1
+ 15,207,947    3    3   6,817,283 1,033,216 1,033,216  1,573,380    2    2  /home/cso/Documents/Computer System Organization/Spring2015-CSO-Project2-Cache-Optimization/refcode.c:level_3
+  7,353,385    5    5   2,102,282   262,178   262,178    263,179  513  513  /home/cso/Documents/Computer System Organization/Spring2015-CSO-Project2-Cache-Optimization/refcode.c:level_2
+
