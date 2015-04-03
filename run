@@ -1,0 +1,4 @@
+/bin/rm *.trace
+gcc -g  -m32 -o $1 $1.c
+valgrind --tool=cachegrind  --D1=32768,4,64 --cachegrind-out-file=cache.trace ./$1 
+cg_annotate cache.trace
