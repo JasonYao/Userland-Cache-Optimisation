@@ -25,8 +25,8 @@ int level_1()
   
   int i, j;
   
-  for(j = 0; j < N; j++)
-    for(i = 0; i < N; i++)
+  for(i = 0; i < N; i++)
+    for(j = 0; j < N; j++)
       B[i][j] = 2*(B[i][j] + 2);
    
   /* Do NOT change the the next few lines till the end of this function */  
