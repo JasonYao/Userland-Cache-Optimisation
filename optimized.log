@@ -19,7 +19,7 @@ Auto-annotation:  off
 --------------------------------------------------------------------------------
          Ir I1mr ILmr          Dr      D1mr      DLmr         Dw  D1mw  DLmw 
 --------------------------------------------------------------------------------
-890,014,567  766  764 540,808,077 1,890,625 1,362,609 77,731,525 1,306 1,283  PROGRAM TOTALS
+890,014,563  766  764 540,808,077 1,644,866 1,116,850 77,731,525 1,306 1,283  PROGRAM TOTALS
 
 --------------------------------------------------------------------------------
          Ir I1mr ILmr          Dr      D1mr      DLmr         Dw D1mw DLmw  file:function
@@ -27,5 +27,5 @@ Auto-annotation:  off
 848,625,104    2    2 524,188,383   528,543       626 74,660,026    1    0  /home/cso/Documents/Computer System Organization/Spring2015-CSO-Project2-Cache-Optimization/optimized.c:level_4
  17,832,989    3    3   7,343,110    65,537    65,537  1,049,606    1    1  /home/cso/Documents/Computer System Organization/Spring2015-CSO-Project2-Cache-Optimization/optimized.c:level_1
  15,207,947    3    3   6,817,283 1,033,216 1,033,216  1,573,380    2    2  /home/cso/Documents/Computer System Organization/Spring2015-CSO-Project2-Cache-Optimization/optimized.c:level_3
-  7,353,385    5    5   2,102,282   262,178   262,178    263,179  513  513  /home/cso/Documents/Computer System Organization/Spring2015-CSO-Project2-Cache-Optimization/optimized.c:level_2
+  7,353,385    5    5   2,102,282    16,419    16,419    263,179  513  513  /home/cso/Documents/Computer System Organization/Spring2015-CSO-Project2-Cache-Optimization/optimized.c:level_2
 

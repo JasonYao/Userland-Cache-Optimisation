@@ -45,12 +45,16 @@ void level_2()
   int i, j;
   int A[DIM][DIM];
   int B[DIM][DIM];
-  
-  for(i = 0; i < DIM; i++)
+
+// NOTE: Changed i++ to ++i, since Dr.Ward said it was more efficient
+  for(i = 0; i < DIM; ++i)
   {
     A[i][i] = 0;
-    for( j = 0; j < DIM; j++)
-      A[i][i] += B[j][i];
+	// Optimization Code begins:
+	for (j = 0; j < DIM; ++j)
+		A[i][i] += B[i][j];
+//    for( j = 0; j < DIM; j++)
+//      A[i][i] += B[j][i];
   } 
   
   /* Do NOT change the the next few lines till the end of this function */  

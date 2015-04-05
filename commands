@@ -3,6 +3,10 @@
 # Compilation
 gcc -g optimized.c -o optimized
 
+# Specifically for this project:
+./run optimized
+
+## Manually done:
 # Valgrind
 valgrind --tool=cachegrind ./optimized
 
