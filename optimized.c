@@ -27,13 +27,9 @@ int level_1()
   
 
 	// Optimized code begins:
-	for(i = 0; i < N; ++i)
-		for(j = 0; j < N; ++j)
+	for(i = 0; i < N; ++i) // Changed i's to j's
+		for(j = 0; j < N; ++j) // Changed j's to i's
 			B[i][j] = 2*(B[i][j] + 2);
-   	// Old unoptimized code begins:
-	//for(j = 0; j < N; ++j)
-        //      for(i = 0; i < N; ++i)
-        //              B[i][j] = 2*(B[i][j] + 2);
   /* Do NOT change the the next few lines till the end of this function */  
   i = random () % N;
   j = random () % N;
@@ -56,10 +52,7 @@ void level_2()
 	A[i][i] = 0;
 	// Optimization Code begins:
 	for (j = 0; j < DIM; ++j)
-		A[i][i] += B[i][j];
-	// Old unoptimized code:
-	// for( j = 0; j < DIM; j++)
-	// A[i][i] += B[j][i];
+		A[i][i] += B[i][j]; // Swapped j and i
   }
 
   /* Do NOT change the the next few lines till the end of this function */
@@ -79,8 +72,8 @@ void level_3()
   int temp;
   int c[N][N];
 
-	int begin = c[0][0];
 	// Optimized code start:
+	int overwrite = c[0][0];
 	for (i = 0; i < N; ++i)
 	{
 		// Switches the position to be flipped
@@ -91,19 +84,11 @@ void level_3()
 			c[i][j] = c[i][N-j];
 			c[i][N-j] = temp;
 		}
-		// Deals with the first column
+		// Deals with the 0th column
 		c[i][0] = c[i + 1][0];
 	}
-	c[N][0] = begin;
-	// Old code:
-//	  for( i = 0; i < N >> 1; i++)
-//	    for( j = 0; j < N; j++)
-//	    {
-//	      temp = c[j][i];
-//	      c[j][i] = c[j][N-i];
-//	      c[j][N-i] = temp;
-//	    }
-
+	// Finalizes by overwriting the 4 bytes after c[][] with c[0][0]
+	c[N][0] = overwrite;
 /* Do NOT change the the next few lines till the end of this function */
     printf("level 3 ... Success!\n");
 
