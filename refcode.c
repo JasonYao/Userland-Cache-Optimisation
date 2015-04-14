@@ -56,7 +56,7 @@ void level_2()
   /* Do NOT change the the next few lines till the end of this function */  
   i = random () % DIM;
   for(j = 0; j < DIM; j++)
-    temp += B[i][j];
+    temp += B[j][i];
   
   if( temp == A[i][i] )
     printf("level 2 ... Success!\n");
@@ -68,7 +68,7 @@ void level_3()
 {
   int i, j;
   int temp;
-  int c[N][N];
+  int c[N+1][N+1];
   
   for( i = 0; i < N>>1; i++)
     for( j = 0; j < N; j++)
